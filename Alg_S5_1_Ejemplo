@@ -1,17 +1,29 @@
 #include <iostream>
+using namespace std;
 
 int main() {
-  std::cout << "Hola, soy Ricardo\n";
-  std::cout << "Ingresa tu edad\n";
+  cout << "Hola, soy Ricardo\n";
+  cout << "Ingresa tu edad\n";
 
   //declarando una variable
   //cualquier cosa aqui
   int edad;
-  std::cin >> edad;
+  cin >> edad;
 
+  const double IGV = 0.18;
+
+  //IGV = 0.19;
+  
+  
+  double precio = 150.5;
+
+  double precioTotal = precio + (precio*IGV);
+
+  cout << "El precio total es: " << precioTotal << "\n";
+  
   edad +=10;
 
   //Leer edad;
-  std::cout << "Tu edad es " << edad;
+  cout << "Tu edad es " << edad;
   
 }
