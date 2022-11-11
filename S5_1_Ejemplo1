@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+/*
+Escriba un programa en C++ que permita solicitar unnúmero entero y mostrar el valor, el doble del valor y eltriple del valor.
+*/
+
+int main() {
+
+  int num;
+  cout << "Ingrese un valor: \n";
+  cin >> num;
+
+  cout << "El valor es: " << num << "\n";
+  cout << "El doble del valor es: " << num * 2 << "\n";
+  cout << "El triple del valor es: " << num * 3 << "\n";
+  
+}
