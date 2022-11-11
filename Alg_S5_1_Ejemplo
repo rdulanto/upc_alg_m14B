@@ -1,0 +1,17 @@
+#include <iostream>
+
+int main() {
+  std::cout << "Hola, soy Ricardo\n";
+  std::cout << "Ingresa tu edad\n";
+
+  //declarando una variable
+  //cualquier cosa aqui
+  int edad;
+  std::cin >> edad;
+
+  edad +=10;
+
+  //Leer edad;
+  std::cout << "Tu edad es " << edad;
+  
+}
