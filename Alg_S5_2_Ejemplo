@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+  //Usando operadores
+  /*
+    Realizando una pequeña calculadora
+  */
+
+  int num1, num2, resultado;
+  int num3;
+  bool comp;
+
+  /*
+  cout << "Escribir el valor del numero 1: ";
+  cin >> num1;
+
+  cout << "Escribir el valor del numero 2: ";
+  cin >> num2;
+
+  cout << "Escribir el valor del numero 3: ";
+  cin >> num3;
+  */
+
+  cout << "Escribir el valor del numero 1, numero 2 y numero 3: ";
+  cin >> num1 >> num2 >> num3;
+  
+
+  //incrementando el valor de los datos de entrada en una unidad
+
+  //num1 ++;
+  //num2 ++;
+  
+  resultado = num1 + num2 + num3;
+
+  cout << "El resultado de la operacion es " << resultado <<"\n";
+
+  cout << "El valor de num3 " << (int)num3 <<"\n";
+
+
+comp = ((num1 == num2) && (num1 == num3));
+  
+  cout << "Resultado de comparar num1, num2 y num3 " << 
+    comp <<"\n";
+  
+}
