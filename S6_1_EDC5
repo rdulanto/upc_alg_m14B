@@ -1,0 +1,39 @@
+/*
+Escriba un programa en C++ que permita ingresardos números enteros y la primera letra de laoperación que desea realizar (Suma, Resta,Multiplicación, División) y luego nos calcule eimprima el resultado de la operación.
+
+*/
+
+#include <iostream>
+using namespace std;
+int main() {
+
+  int num1, num2;
+  double res;
+  char ope;
+
+  cout << "Ingrese numero 1\n";
+  cin >> num1;
+
+  cout << "Ingrese numero 2\n";
+  cin >> num2;
+
+  cout << "Ingrese el operador (Suma, Resta,Multiplicación, División)\n";
+  cin >> ope;
+
+  switch(ope){
+    case 'S': res = num1 + num2;
+              break;
+    case 'R': res = num1 - num2;
+              break;
+    case 'M': res = num1 * num2;
+              break;
+    case 'D': res = num1 / num2;
+              break;
+    default: res = 0;
+              cout<< "no existe operacion";
+                  
+  }
+
+  cout << "El resultado de la operacion es: " <<  res;
+  
+}
