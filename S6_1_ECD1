@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+  int numero;
+  cout << "Ingrese un numero entero: ";
+  cin >> numero;
+
+  if (numero > 0){
+    cout << "El numero es positivo\n";
+  }
+  else {
+    if (numero == 0){
+      cout << "El numero es cero\n";
+    }
+    else{
+      cout << "El numero es negativo\n";
+    }
+  }
+
+  cout << "-------------------\n";
+  cout << "El programa termino\n";
+  cout << "-------------------\n";
+  
+}
