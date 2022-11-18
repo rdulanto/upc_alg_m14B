@@ -1,0 +1,46 @@
+/*
+En una empresa se ha asignado un bono al sueldo actual deacuerdo al tipo de empleado de la siguiente manera:Tipo de Empleado Letra que identifica Bonificaciónel tipo de empleadoGerentes G 150 solesAdministrativos A 80 solesOperarios O 30 solesAdicionalmente al nuevo sueldo se le aplica un descuento de 17%por impuestos al gobierno y AFP y ESSALUD.Realizar un programa en C++ que reciba los datos necesarios ypermita calcular cual será el nuevo sueldo neto final que recibiráun empleado. Debe tomar en cuenta que el usuario podráingresar el tipo de empleado con una letra Mayúscula ominúscula.
+
+*/
+
+#include <iostream>
+using namespace std;
+int main() {
+
+  double sueldo;
+  char tEmpleado;
+  int bonif;
+  //string nombre;
+  
+  cout << "Ingrese su sueldo\n";
+  cin >> sueldo;
+
+  cout << "Ingrese tipo de empleado\n";
+  cin >> tEmpleado;
+
+  if (tEmpleado== 'G' or tEmpleado== 'g'){
+    bonif = 150;    
+  }
+  else {
+    if (tEmpleado== 'A' or tEmpleado== 'a'){
+      bonif = 80;      
+    }
+    else {
+      if (tEmpleado== 'O' or tEmpleado== 'o'){
+        bonif = 30;
+      }
+      else{
+        cout << "No existe tipo de empleado\n";
+        bonif = 0;
+      }
+    }
+  }
+
+  sueldo += bonif;
+
+  //deduccion de impuestos
+  sueldo  = sueldo - (sueldo * 0.17);
+
+  cout<<"Su sueldo neto es: " << sueldo;
+  
+}
