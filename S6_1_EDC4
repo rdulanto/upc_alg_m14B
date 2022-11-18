@@ -1,0 +1,28 @@
+/*
+Escriba un programa en C++ que solicite un númeroentero e indique el color que marca el semáforo
+*/
+
+#include <iostream>
+using namespace std;
+int main() {
+
+  int numero;
+  string color;
+  cout << "Ingrese un numero (1: Rojo, 2:Ambar y 3:Verde)\n";
+  cin>> numero;
+
+  switch(numero){
+    case 1: color="Rojo";
+            break;
+    case 2: color ="Ambar";
+            break;
+    case 3: color = "Verde";
+            break;
+    default: color="No existe";
+    
+  }
+
+  cout << "El color del semaforo es: "<< color;
+  
+  
+}
