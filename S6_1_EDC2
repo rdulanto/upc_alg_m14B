@@ -1,0 +1,31 @@
+/*
+Una empresa ha decidido aumentar el sueldo a susempleados según sus años en la empresa:• Si tienen menos de 5 años de servicio, se leaumentará el sueldo en 1000 nuevos soles• Si los años de servicio van de 5 a 10 , el incrementoserá de 2000 nuevos soles, y• Si es mayor de 10, será de 3000 nuevos solesSe le solicita a usted que escriba un programa en C++que dado como datos el sueldo y los años de servicio deun trabajador, nos determine su nuevo sueldo
+  */
+
+
+#include <iostream>
+using namespace std;
+int main() {
+
+  double sueldo;
+  int aServ, incremento;
+  cout << "Ingrese su sueldo\n";
+  cin >> sueldo;
+  cout << "Ingrese los años de servicio\n";
+  cin >> aServ;
+
+  if (aServ < 5){
+    incremento = 1000;
+  }
+  else {
+    if (aServ > 10){
+      incremento = 3000;
+    }
+    else{
+      incremento = 2000;
+    }
+  }
+
+  cout << "Tu sueldo ahora es " << (sueldo + incremento);
+  
+}
