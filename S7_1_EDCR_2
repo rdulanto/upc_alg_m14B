@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main() {
+  
+/*
+Dado un numero n=7 generar 7,6,5,4,3,2,1 .• Datos de entrada: n• Datos de salida: Impresión de la serie de números positivos• Restricciones: Ninguna
+*/
+
+  int n;
+
+  cout << "Ingresa un numero: ";
+  cin >>  n;
+
+  while (n >= 1){
+
+    if (n==2){
+      cout << n << '\n' ;
+      
+    }else {
+      cout << n << ", ";
+    }
+    
+    n -=2;;
+    
+  }
+  
