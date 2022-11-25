@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace  std;
+int main() {
+  /*
+Escriba un programa en C++ que calcule e imprima la suma todos los números imparesdesde cero hasta un número N dado como dato.
+*/
+
+  int n, original;
+  cout << "Ingrese un numero ";
+  cin >> n;
+  original = n;
+
+  int suma = 0;
+  while (n >=1){
+
+    if (n%2 != 0){
+
+      suma += n; 
+      
+    }
+    n -=1;    
+  }
+
+  cout << "La suma de los " << original << " primeros numeros impares es "<< suma << '\n';
+  
+}
