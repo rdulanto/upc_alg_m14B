@@ -1,0 +1,49 @@
+#include <iostream>
+using namespace std;
+int main() {
+  
+
+/*
+Escriba un programa en C++, que permita calcular el promedio final de los N alumnos quecontiene una sección si se sabe que el promedio de cada alumno se obtiene de la siguienteforma:
+
+• 55% del Examen Final
+• 30% de Examen Parcial
+• 15% del Trabajo final
+
+Ejemplo:
+Ingrese el numero de alumnos: 3
+Ingrese el EF del Alumno 1:15
+Ingrese el EP del Alumno 1:10
+Ingrese el TF del Alumno 1:13
+Su promedio final es: 13.20
+
+Ingrese el EF del Alumno 2:12Ingrese el EP del Alumno 2:15Ingrese el TF del Alumno 2:8Su promedio final es: 12.30Ingrese el EF del Alumno 3:18Ingrese el EP del Alumno 3:15Ingrese el TF del Alumno 3:16Su promedio final es: 16.8
+
+*/
+  int alum;
+  cout << "Ingrese la cantidad de alumnos ";
+  cin >> alum;
+  cout << "\n";
+
+  double ef, ep, tf, nf;
+  int al = 1;
+  while (al <= alum){
+
+    cout << "Ingrese el EF del alumno "<<al<<" ";
+    cin >> ef;
+
+    cout << "Ingrese el EP del alumno "<<al<<" ";
+    cin >> ep;
+
+    cout << "Ingrese el TF del alumno "<<al<<" ";
+    cin >> tf;
+
+    nf = (ef*0.55) + (ep*0.3) + (tf*0.15);
+
+    cout << "La nota final del alumno " << al << " es "<<nf<<"\n \n";
+    
+    al++;
+    
+  }
+  
+}
