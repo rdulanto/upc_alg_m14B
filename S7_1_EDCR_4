@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+  /*
+Escriba un programa en C++ que determina la suma de los 10 primeros números positivos
+*/
+
+  int suma =0;
+  for (int z=1; z<=10;z++){
+    suma += z;
+    
+  }
+  cout << "La suma de los primeros 10 numeros es "<< suma;
+}
