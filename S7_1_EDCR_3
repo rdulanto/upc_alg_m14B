@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  /*
+
+Escriba un programa en C++ que permita imprimir los cincoprimeros números positivos. Usando for
+*/
+
+
+  int n = 1;
+  while (n <=5){
+    cout << n << '\n';
+    n++;
+  }
+
+   cout << '\n';
+  //Utilizando For
+
+  for (int x=5; x >= 1; x-- ){
+     cout << x << '\n';
+  }
+  
+}
