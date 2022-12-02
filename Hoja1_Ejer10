@@ -1,0 +1,98 @@
+/*
+Grupo: 0
+Integrante 1: Ricardo Dulanto (33.3%)
+Integrante 2: Paolo Guerrero (33.3%)
+Integrante 3: Britney Spears (33.3%)
+
+*/
+
+/*
+Entradas: intentos y el numero que se adivina
+
+Proceso: se genera el valor aleatorio y se compara con este con el numero adivinado
+
+
+Salida: el resultado del juego
+*/
+#include <iostream>
+#include <stdlib.h> // srand, rand
+using namespace std;
+int main() {
+  
+/*
+Escriba un programa en C++ que implemente el siguiente juego:• El programa seleccionará un número aleatorio entre 0 y 100 y el jugador debe acertarlo.• En cada intento el jugador propondrá una solución y se le informará si el número aacertar es menor o mayor que el propuesto.• El juego termina cuando se acierte la cifra o haya realizado un máximo de 12 intentosen cuyo caso se le mostrará al jugador la calificación obtenida según la siguiente tabla:
+1-3 Fue pura suerte!
+4-6 Eres bueno!
+7 No esta mal!
+8 Se puede mejorar
+>8 Que mal que estas!
+
+*/
+  int intentos = 12;
+
+// Numeros aleatorios
+  srand (time(NULL));
+  
+  int numeroElegido = rand() % 100 + 1;
+
+  //cout << "El valor aleatorio generado es: " << numeroElegido << "\n";
+  
+  bool gano=false;
+  int contadorIntentos=0;
+
+  int juego;
+
+  cout << "***********************\n";
+  cout << "Adivina el numero que estoy pensando, entre 1 y 100\n";
+  cout << "***********************\n \n";
+  
+  while (intentos > 0){
+
+    //while (juego<1 or juego >100 or juego ){
+      cout << "Intento: " << contadorIntentos << "\n";
+      cout << "Ingrese un numero entre 1 y 100 \n";
+      cin >> juego;
+    
+    //}
+    contadorIntentos++;
+    if(juego == numeroElegido){
+      gano = true;
+      break;
+    }
+    if(numeroElegido<juego){
+      cout<<"Estoy pensando en un numero menor\n ";
+    }else {
+      cout<<"Estoy pensando en un numero mayor\n ";
+    }
+    intentos--;    
+  }
+
+  cout << "****************\n";
+  cout << "El resultado es:\n";
+  if (gano == true){
+    cout << "Gano el juego, en el intento " << contadorIntentos<<"\n";
+    switch(contadorIntentos){
+      case (1, 2, 3): 
+          cout << "Fue pura suerte!";
+          break;
+      case (4,5,6): 
+          cout << "Eres bueno!";
+          break;
+      case (7): 
+          cout << "No esta mal!";
+          break;
+      case (8): 
+          cout << "Se puede mejorar";
+          break;
+      default: 
+          cout << "Que mal que estas!";
+    }
+    
+  }
+  else {
+    cout << "No gano el juego" << contadorIntentos;
+  }
+
+  
+  
+}
